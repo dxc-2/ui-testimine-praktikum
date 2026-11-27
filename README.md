@@ -434,10 +434,24 @@ Enne esitamist kontrolli:
 ### Vasta README lõpus järgmistele küsimustele
 
 1. Mis vahe on manuaalsel ja automaatsel UI-testimisel?
+
+Manuaalsel testimisel teeb kõiki tegevusi (klõpsud, sisestused) inimene ise brauseris. Automaatsel testimisel teeb neid tegevusi programm ehk skript, mis simuleerib kasutaja samme kiiresti ja korratavalt.
+
 2. Mida kontrollib sinu esimene test?
+
+Esimene test kontrollib, kas kasutaja saab sisestusvälja kaudu lisada uue ülesande, vajutades klahvi Enter, ning kas see ülesanne muutub lehel nähtavaks.
+
 3. Miks kasutatakse Playwrighti testides `expect()`?
+
+kontrollide (assertions) tegemiseks, et veenduda: rakenduse tegelik olek ja tulemus vastavad täpselt oodatule.
+
 4. Mida tähendab `passed` ja mida tähendab `failed`?
+
+edukalt ja kõik ootused täitusid. failed tähendab, et testis esines tõrge või tulemus erines oodatust.
+
 5. Kas ebaõnnestunud test tähendab alati, et veebirakenduses on viga? Selgita.
+
+Ei tähenda alati. Test võib ebaõnnestuda ka vigase testikoodi, vale lokaatori, rakenduse kujunduse muutuste või võrguviivituste tõttu, ilma et rakenduses endas viga oleks.
 
 ### Esitamise tulemus
 
